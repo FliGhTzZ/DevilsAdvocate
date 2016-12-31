@@ -1,0 +1,16 @@
+<html>
+
+  <body>
+    <p>Welcome back, {{ name }}!</p>
+    {% if admin %}
+      <p>You are an admin </p>
+      <p>Click <a href="/addArticle">here</a> to add articles. </p>
+      <p>Click <a href="/viewArticles">here</a> to view the articles in the database </p>
+    {% else %}
+      <p>You are not an admin</p>
+    {% endif %}
+
+
+  </body>
+
+</html>

@@ -1,0 +1,15 @@
+<html>
+<body>
+  <p> Thanks for signing up, {{ name }} ! </p> <br />
+  <p> What is your political orientation? </p><br />
+  <form action="/finished/{{ id }}" method="post">
+        <div><select name="politic">
+              <option value="Republican">Republican</option>
+              <option value="Independent">Independent</option>
+              <option value="Democrat">Democrat</option>
+              </select>
+        </div>
+        <div><input type="submit" class="btn btn-large btn-primary" value="Submit"></div>
+      </form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+<head>
+  <style type='text/css'>
+	label {
+	  width:50px;
+	  display: inline-block;
+	}
+</style>
+</head>
+  <body>
+    <h>Add Articles</h>
+    <p>Enter the link to the article you wish to add below, along with its title, author and source. </p>
+    <form action="/addArticle" method="post">
+      <p class="formfield">
+	    <label for="link">Link</label>
+	    <textarea id="link" name="link"></textarea>
+	  </p>
+	  <p class="formfield">
+	    <label for="title">Title</label>
+	    <textarea id="title" name="title"></textarea>
+	  </p>
+	  <p class="formfield">
+	    <label for="author">Author</label>
+	    <textarea id="author" name="author"></textarea>
+	  </p>
+	  <p class="formfield">
+	    <label for="source">Source</label>
+	    <textarea id="source" name="source"></textarea>
+	  </p>
+    <div><input type="submit" class="btn btn-large btn-primary" value="Submit"></div>
+      </form>
+   <p>Click <a href="/nextStep">here</a> to go back to the console.</p>
+  </body>
+</html>
